@@ -15,7 +15,7 @@ body{
     padding: 1rem;
     background-color: #FFF;
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
 }
 
 .content h1 {
@@ -92,18 +92,18 @@ body{
     }
 
     .pokemon-list{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns:  1fr 1fr 1fr 1fr;
     }
 }
 
 @media screen and (min-width: 576px){
     .pokemon-list{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns:  1fr 1fr 1fr;
     }
 }
 
 @media screen and (min-width: 380px){
     .pokemon-list{
-        grid-template: 1fr 1fr;
+        grid-template-columns:  1fr 1fr;
     }
 }
