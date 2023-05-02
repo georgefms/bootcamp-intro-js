@@ -16,9 +16,6 @@ function createPokemonHtml(pokemon) {
     `
 }
 pokeApi.getPokemonList()
-.then((pokemons) => {
-    for (let i = 0; i < pokemons.length; i++) {
-        const pokemon = pokemons[i];
-        pokemonList.innerHTML += createPokemonHtml(pokemon);
-    }
+.then((pokemons = []) => {
+    pokemonList.innerHTML += pokemons.map(createPokemonHtml).join('');
 })
