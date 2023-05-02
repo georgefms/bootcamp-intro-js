@@ -155,6 +155,25 @@ body{
     background-color: #f9aec7;
 }
 
+.pagination{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem;
+    
+}
+
+.pagination button {
+    color: #FFF;
+    background-color: #6C79DB;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 0.625rem auto;
+}
+
 /* Media queries */
 
 @media screen and (min-width: 992px){ 
