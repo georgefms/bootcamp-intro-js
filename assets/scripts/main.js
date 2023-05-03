@@ -1,7 +1,7 @@
 const pokemonList = document.getElementById('pokemonList');
 const loadMoreButton = document.getElementById('loadMore');
-const maxRecords = 151;
-const limit = 12;
+const maxRecords = 10;
+const limit = 5;
 let offset = 0;
 
 
@@ -38,3 +38,11 @@ loadMoreButton.addEventListener( 'click', () => {
         loadPokemonItems(offset, limit)
     }
 } )
+
+// A partir daqui construir os eventos de click no id: pokemon-popup
+
+const popupButton = document.getElementById('pokemon-popup')
+
+popupButton.addEventListener('click', () => {
+    popup.style.display = "block";
+})
