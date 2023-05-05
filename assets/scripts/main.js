@@ -1,5 +1,8 @@
 const pokemonList = document.getElementById('pokemonList');
 const loadMoreButton = document.getElementById('loadMore');
+const popupButton = document.getElementById('pokemon-btn');
+const popup = document.getElementById('pokemon-popup')
+
 const maxRecords = 10;
 const limit = 5;
 let offset = 0;
@@ -41,8 +44,16 @@ loadMoreButton.addEventListener( 'click', () => {
 
 // A partir daqui construir os eventos de click no id: pokemon-popup
 
-const popupButton = document.getElementById('pokemon-popup')
-
-popupButton.addEventListener('click', () => {
-    popup.style.display = "block";
+popupButton.addEventListener('click', ()=>{
+    console.log('eu n aguento mais');
+    popup.classList.toggle('visivel', true)
 })
+
+function teste(){
+    console.log('me clicou');
+    popup.style.display = 'block';
+}
+function teste2(){
+    console.log('me clicou');
+    popup.style.display = 'none';
+}
