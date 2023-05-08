@@ -1,7 +1,7 @@
 const pokemonList = document.getElementById('pokemonList');
 const loadMoreButton = document.getElementById('loadMore');
 const popupButton = document.getElementById('pokemon-btn');
-const popup = document.getElementById('pokemon-popup')
+//const popup = document.getElementById('pokemon-popup')
 
 const maxRecords = 10;
 const limit = 5;
@@ -56,4 +56,12 @@ function teste(){
 function teste2(){
     console.log('me clicou');
     popup.style.display = 'none';
+}
+
+const popup = document.querySelector('.popup');
+function showPopup() {
+  popup.classList.add('open');
+}
+function hidePopup() {
+  popup.classList.remove('open');
 }

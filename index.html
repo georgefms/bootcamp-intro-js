@@ -23,7 +23,7 @@
             <li class="pokemon grass">
                 <span class="pokemon-number">#Placeholder</span>
                 <span class="pokemon-name">Placeholder</span>
-                <a id="pokemon-btn" class="visivel" onclick="teste()">
+                <a id="pokemon-btn" onclick="showPopup()">
                 <div class="pokemon-details">
                     <ol class="pokemon-types">
                         <li class="type grass">Grass</li>
@@ -36,8 +36,25 @@
             </li>
         </ol>
         <!-- A partir dessa div mostrar os detalhes do pokemon -->
-        <div id="pokemon-popup" >teste</div>
-        <a id="pokemon-btn" class="visivel" onclick="teste2()">aspldjasoidjiodsa</a>
+          <div class="popup">
+            <div class="blocker" onclick="hidePopup()"></div>
+            <div class="pokemon-contents">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="poke 1">
+              Aqui terao detalhes do pokemon
+                <ol>Status Base:
+                    <li>HP</li>         
+                    <li>Ataque</li>            
+                    <li>defesa</li>
+                    <li>SP-ataque</li>
+                    <li>SP-defesa</li>
+                </ol>
+                <ol>Extras:  
+                    <li>Altura (Dividido/10) m</li>
+                    <li>Peso</li>Peso
+                </ol>
+            </div>
+          </div>
+        <!-- <a id="pokemon-btn" class="visivel" onclick="teste2()">aspldjasoidjiodsa</a> -->
         <div class="pagination">
             <button id="loadMore" type="button">
                 Carregar Mais

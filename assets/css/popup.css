@@ -3,7 +3,7 @@ a {
     text-decoration: none;
 }
 
-#pokemon-popup {
+/* #popup {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -17,8 +17,37 @@ a {
 
 .visivel{
     display: block;
-}
+} */
 
 #pokemon-btn:hover{
     cursor:pointer;
+}
+
+.popup { display: none; }
+
+.popup.open { display: block; }
+
+.blocker {
+position: fixed;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+content: ' ';
+background: rgba(0,0,0,.5);
+}
+.popup .pokemon-contents {
+border: 1px solid #ccc;
+border-radius: 5px;
+width: 400px;
+height: 200px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #FFF;
+
+position: fixed;
+top: 50vh;
+left: 50vw;
+transform: translate(-50%, -50%);
 }
