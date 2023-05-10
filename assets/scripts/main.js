@@ -1,7 +1,8 @@
 const pokemonList = document.getElementById('pokemonList');
 const loadMoreButton = document.getElementById('loadMore');
 const popupButton = document.getElementById('pokemon-btn');
-//const popup = document.getElementById('pokemon-popup')
+const shinyButton = document.getElementById('pokemon-imgs')
+const artwork1 = document.getElementById('artwork1')
 
 const maxRecords = 10;
 const limit = 5;
@@ -44,20 +45,6 @@ loadMoreButton.addEventListener( 'click', () => {
 
 // A partir daqui construir os eventos de click no id: pokemon-popup
 
-popupButton.addEventListener('click', ()=>{
-    console.log('eu n aguento mais');
-    popup.classList.toggle('visivel', true)
-})
-
-function teste(){
-    console.log('me clicou');
-    popup.style.display = 'block';
-}
-function teste2(){
-    console.log('me clicou');
-    popup.style.display = 'none';
-}
-
 const popup = document.querySelector('.popup');
 function showPopup() {
   popup.classList.add('open');
@@ -65,3 +52,7 @@ function showPopup() {
 function hidePopup() {
   popup.classList.remove('open');
 }
+
+shinyButton.addEventListener('click', () => {
+    artwork1.classList.toggle('transparent')
+})
