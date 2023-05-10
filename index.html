@@ -35,26 +35,32 @@
                 </a>
             </li>
         </ol>
-        <!-- A partir dessa div mostrar os detalhes do pokemon -->
+        <!-- Adicionar a criação desse elemento de forma dinâmica -->
           <div class="popup">
             <div class="blocker" onclick="hidePopup()"></div>
-            <div class="pokemon-contents">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="poke 1">
-              Aqui terao detalhes do pokemon
-                <ol>Status Base:
-                    <li>HP</li>         
-                    <li>Ataque</li>            
-                    <li>defesa</li>
-                    <li>SP-ataque</li>
-                    <li>SP-defesa</li>
-                </ol>
-                <ol>Extras:  
-                    <li>Altura (Dividido/10) m</li>
-                    <li>Peso</li>Peso
-                </ol>
+            <div class="pokemon-contents grass">
+                <div id="pokemon-imgs">
+                    <img id="artwork2" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/1.png" alt="Pokemon artwork shiny">
+                    <img id="artwork1" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Pokemon artwork">
+                    <span class="pokemon-tooltip">Clique para versão shiny</span>
+                </div>
+                <div class="pokemon-stats">
+                      <ol>
+                          <li>HP: 45</li>         
+                          <li>Ataque: 49</li>            
+                          <li>defesa: 49</li>
+                          <li>SP-ataque: 65</li>
+                          <li>SP-defesa: 65</li>
+                          <li>Vel: 45</li>
+                      </ol>
+                      <ol>
+                        <!-- Altura:(Dividido/10) m< -->
+                          <li>Altura: 0.7 m </li>
+                          <li>Peso: 69 kg</li>
+                      </ol>
+                </div>
             </div>
           </div>
-        <!-- <a id="pokemon-btn" class="visivel" onclick="teste2()">aspldjasoidjiodsa</a> -->
         <div class="pagination">
             <button id="loadMore" type="button">
                 Carregar Mais
