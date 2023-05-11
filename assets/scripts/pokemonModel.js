@@ -4,4 +4,15 @@ class Pokemon {
     type;
     types = [];
     img;
+
+    // Artworks: 
+    base;
+    shiny;
+
+    // Stats: 
+    stats = [];
+
+    // Trivia: 
+    height;
+    weight;
 };
