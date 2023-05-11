@@ -3,7 +3,7 @@ a {
     text-decoration: none;
 }
 
-#pokemon-btn:hover{
+.pokemon-btn:hover{
     cursor:pointer;
 }
 
@@ -21,7 +21,7 @@ content: ' ';
 background: rgba(0,0,0,.5);
 }
 .popup .pokemon-contents {
-border-radius: 5px;
+border-radius: 1rem;
 width: 300px;
 height: max-content;
 display: flex;
