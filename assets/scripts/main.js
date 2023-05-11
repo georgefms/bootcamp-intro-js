@@ -1,14 +1,15 @@
 const pokemonList = document.getElementById('pokemonList');
 const loadMoreButton = document.getElementById('loadMore');
 const popupButton = document.getElementById('pokemon-btn');
-const shinyButton = document.getElementById('pokemon-imgs')
+const shinyButton = document.getElementById('pokemon-imgs');
+const popups = document.getElementById('popup')
 const artwork1 = document.getElementById('artwork1')
 
 const maxRecords = 10;
 const limit = 5;
 let offset = 0;
 
-
+// Carregar lista de pokemons 
 function loadPokemonItems(offset, limit){
     pokeApi.getPokemonList(offset, limit).then((pokemons = []) => {
     const newHtml = pokemons.map((pokemon) => `
@@ -28,6 +29,9 @@ function loadPokemonItems(offset, limit){
 }
 
 loadPokemonItems(offset, limit);
+
+// Carregar detalhes
+// TODO Implementar função para trazer as divs com os detalhes do pokemon
 
 loadMoreButton.addEventListener( 'click', () => {
     offset += limit;
