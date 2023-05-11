@@ -13,6 +13,20 @@ function convertApiPokemonToModelPokemon(pokeDetail){
 
   pokemon.img = pokeDetail.sprites.other.dream_world.front_default;
 
+  // Trivia: 
+
+  pokemon.height = pokeDetail.height/10;
+  pokemon.weight = pokeDetail.weight;
+
+  // Artworks:
+  pokemon.base = pokeDetail.sprites.other['official-artwork'].front_default;
+  pokemon.shiny = pokeDetail.sprites.other['official-artwork'].front_shiny;
+
+  // Status:
+  const stats = pokeDetail.stats.map((stats) => stats.base_stat)
+
+  pokemon.stats = stats;
+
   return pokemon;
 }
 
